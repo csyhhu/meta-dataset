@@ -55,7 +55,7 @@ from meta_dataset.models.experimental import parameter_adapter  # pylint: disabl
 import tensorflow.compat.v1 as tf
 tf.disable_eager_execution()
 
-DEFAULT_SAVING_DIRECTORY = '/tmp/metadataset'
+DEFAULT_SAVING_DIRECTORY = './Results/metadataset'
 
 tf.flags.DEFINE_string('train_checkpoint_dir',
                        os.path.join(DEFAULT_SAVING_DIRECTORY, 'checkpoints'),
